@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ethan Nguyen — UGC &amp; short-form video</title>
+<meta name="description" content="I write, shoot and edit short-form video for brands — vertical, sound-on, made to post or run as an ad.">
+
+<!-- Link preview (iMessage, WhatsApp, Slack, LinkedIn). Update the URLs below
+     to your final domain so the preview shows your site, not the file path. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ethan Nguyen — UGC &amp; short-form video">
+<meta property="og:description" content="Vertical, sound-on video for brands. Apparel, automotive and music gear.">
+<meta property="og:image" content="media/vera-fencing-jacket.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ethan Nguyen — UGC &amp; short-form video">
+<meta name="twitter:description" content="Vertical, sound-on video for brands. Apparel, automotive and music gear.">
+<meta name="twitter:image" content="media/vera-fencing-jacket.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap">
+
+<style>
+  /* Deliberately plain. The work is four vertical videos — they supply every
+     colour on the page, so the page itself stays a neutral frame: paper ground,
+     ink text, hairlines, no accent hue competing with the footage. */
+  :root{
+    --paper:#FCFCFB;
+    --ink:#16171A;
+    --muted:#76787D;
+    --rule:#E5E4E1;
+    --well:#EFEEEB;
+    --max:1200px;
+    color-scheme:light dark;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --paper:#121314;
+      --ink:#EDEDEA;
+      --muted:#8C8E92;
+      --rule:#272829;
+      --well:#1B1C1E;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#121314;
+    --ink:#EDEDEA;
+    --muted:#8C8E92;
+    --rule:#272829;
+    --well:#1B1C1E;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Archivo","Helvetica Neue",Arial,sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+
+  header{
+    display:flex;justify-content:space-between;align-items:baseline;
+    gap:24px;flex-wrap:wrap;
+    padding:40px 0 20px;border-bottom:1px solid var(--rule);
+  }
+  header h1{margin:0;font-size:21px;font-weight:600;letter-spacing:-.01em}
+  header .who{color:var(--muted);font-size:15px}
+  header a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
+  header a:hover,header a:focus-visible{border-color:var(--ink)}
+
+  .intro{padding:44px 0 36px;max-width:60ch}
+  .intro p{margin:0;font-size:19px;line-height:1.55}
+  .intro p + p{margin-top:14px;color:var(--muted);font-size:16px}
+
+  .reel{
+    display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:20px;padding-bottom:12px;
+  }
+  figure{margin:0;display:flex;flex-direction:column;gap:10px;min-width:0}
+  video{
+    width:100%;aspect-ratio:9/16;display:block;
+    background:var(--well);border-radius:3px;object-fit:cover;
+  }
+  figcaption{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+  figcaption .what{font-size:14.5px;color:var(--ink)}
+  figcaption .what span{display:block;color:var(--muted);font-size:13.5px;line-height:1.4}
+  figcaption a{
+    font-size:13px;color:var(--muted);text-decoration:none;white-space:nowrap;
+    border-bottom:1px solid var(--rule);
+  }
+  figcaption a:hover,figcaption a:focus-visible{color:var(--ink);border-color:var(--ink)}
+
+  .about{
+    margin-top:56px;padding-top:36px;border-top:1px solid var(--rule);
+    display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 64px;max-width:900px;
+  }
+  .about h2{margin:0 0 6px;font-size:16px;font-weight:600}
+  .about p{margin:0;color:var(--muted);font-size:15.5px}
+
+  .end{
+    margin-top:56px;padding:36px 0 72px;border-top:1px solid var(--rule);
+    display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:baseline;
+  }
+  .end a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
+  .end a:hover,.end a:focus-visible{border-color:var(--ink)}
+  .end .links{display:flex;gap:20px;color:var(--muted);font-size:15px}
+
+  :focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+
+  @media (max-width:900px){
+    .reel{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .about{grid-template-columns:1fr;gap:28px}
+  }
+  @media (max-width:540px){
+    .wrap{padding:0 20px}
+    .reel{grid-template-columns:1fr;gap:28px}
+    .intro{padding:32px 0 28px}
+    .intro p{font-size:17px}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <h1>Ethan Nguyen</h1>
+    <div class="who">UGC &amp; short-form video · <a href="mailto:email.ethannguyen@gmail.com">email.ethannguyen@gmail.com</a></div>
+  </header>
+
+  <div class="intro">
+    <p>I write, shoot and edit short-form video for brands — vertical, sound-on, made to post or run as an ad.</p>
+    <p>Apparel, automotive and music gear. View counts are from the brands’ own channels.</p>
+  </div>
+
+  <div class="reel">
+
+    <figure>
+      <video controls playsinline preload="metadata"
+             poster="media/vera-fencing-jacket.jpg"
+             src="media/vera-fencing-jacket.mp4"></video>
+      <figcaption>
+        <div class="what">Vera Studios<span>Fencing jacket · 1.4M views</span></div>
+        <a href="https://www.instagram.com/reel/DXU9yzwko6B/" target="_blank" rel="noopener">Instagram</a>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <video controls playsinline preload="metadata"
+             poster="media/vera-second-cut.jpg"
+             src="media/vera-second-cut.mp4"></video>
+      <figcaption>
+        <div class="what">Vera Studios<span>Second cut · 555.9K views</span></div>
+        <a href="https://www.instagram.com/p/DVrwMO-j2Ml/" target="_blank" rel="noopener">Instagram</a>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <video controls playsinline preload="metadata"
+             poster="media/car-rental-japan.jpg"
+             src="media/car-rental-japan.mp4"></video>
+      <figcaption>
+        <div class="what">Car rental<span>On location, Japan · 28.4K views</span></div>
+        <a href="https://www.instagram.com/reel/DZ1yXigBGaH/" target="_blank" rel="noopener">Instagram</a>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <video controls playsinline preload="metadata"
+             poster="media/music-gear.jpg"
+             src="media/music-gear.mp4"></video>
+      <figcaption>
+        <div class="what">Music gear<span>Talking head, 30s</span></div>
+      </figcaption>
+    </figure>
+
+  </div>
+
+  <div class="about">
+    <div>
+      <h2>What you get</h2>
+      <p>Concept and hook, filmed and cut vertical from the start, delivered as platform-ready 9:16 files you own.</p>
+    </div>
+    <div>
+      <h2>How it works</h2>
+      <p>Send the product and the brief. Usage rights, exclusivity and turnaround are quoted per campaign.</p>
+    </div>
+  </div>
+
+  <div class="end">
+    <div>Available for new work — <a href="mailto:email.ethannguyen@gmail.com">email.ethannguyen@gmail.com</a></div>
+    <div class="links">
+      <a href="https://www.instagram.com/byverastudios" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
